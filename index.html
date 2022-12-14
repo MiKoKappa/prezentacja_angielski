@@ -19,7 +19,6 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        
         <section>
           <h3>Image generation with Deep Neural Networks</h3>
         </section>
@@ -28,11 +27,20 @@
             <p>What is a Deep Neural Network</p>
           </section>
           <section data-auto-animate>
-            <p>Deep Neural Network (DNN) is a Neural Network with at least two hidden layers.</p>
+            <p>
+              Deep Neural Network (DNN) is a Neural Network with at least two
+              hidden layers.
+            </p>
           </section>
           <section data-auto-animate>
-            <p>Deep Neural Network (DNN) is a Neural Network with at least two hidden layers.</p>
-            <p>Their main purpose is to process data in complex ways, usualy to predict the outcome of some given input.</p>
+            <p>
+              Deep Neural Network (DNN) is a Neural Network with at least two
+              hidden layers.
+            </p>
+            <p>
+              Their main purpose is to process data in complex ways, usualy to
+              predict the outcome of some given input.
+            </p>
           </section>
         </section>
 
@@ -47,19 +55,19 @@
           <section data-auto-animate>
             <p>What DNN are used for?</p>
             <li>Image recognition</li>
-            <li>Pattern recognition</li>         
+            <li>Pattern recognition</li>
           </section>
           <section data-auto-animate>
             <p>What DNN are used for?</p>
             <li>Image recognition</li>
-            <li>Pattern recognition</li> 
-            <li>Data generation</li>         
+            <li>Pattern recognition</li>
+            <li>Data generation</li>
           </section>
           <section data-auto-animate>
             <p>What DNN are used for?</p>
             <li>Image recognition</li>
-            <li>Pattern recognition</li> 
-            <li>Data generation</li>  
+            <li>Pattern recognition</li>
+            <li>Data generation</li>
             <b><li>Image generation</li></b>
           </section>
         </section>
@@ -73,19 +81,71 @@
           </section>
           <section data-auto-animate>
             <li>1973 - AARON by Harlod Cohen</li>
-            <li>2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow</li>         
+            <li>
+              2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow
+            </li>
           </section>
           <section data-auto-animate>
             <li>1973 - AARON by Harlod Cohen</li>
-            <li>2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow</li> 
-            <li>2021 - DALL-E by OpenAi</li>         
+            <li>
+              2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow
+            </li>
+            <li>2021 - DALL-E by OpenAi</li>
           </section>
           <section data-auto-animate>
             <li>1973 - AARON by Harlod Cohen</li>
-            <li>2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow</li> 
-            <li>2021 - DALL-E by OpenAi</li>  
+            <li>
+              2014 - Generative Adversarial Networks (GANs) by Ian Goodfellow
+            </li>
+            <li>2021 - DALL-E by OpenAi</li>
             <li>2022 - DALL-E 2 by OpenAi</li>
             <li>2022 - Stable Difusion by CompVis</li>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p>How does it really work?</p>
+          </section>
+          <section data-auto-animate>
+            <p>How does it really work?</p>
+            <p><b>It's a pretty complicated task!</b></p>
+          </section>
+          <section data-auto-animate>
+            <p>Training a model</p>
+          </section>
+          <section data-auto-animate>
+            <p>Training a model</p>
+            <li>Selecting input images</li>
+          </section>
+          <section data-auto-animate>
+            <p>Training a model</p>
+            <li>Selecting input images</li>
+            <li>Making images noisy with labeling</li>
+          </section>
+          <section data-auto-animate>
+            <p>Training a model</p>
+            <li>Selecting input images</li>
+            <li>Making images noisy with labeling</li>
+            <li>Training a deep network to reverse this process</li>
+          </section>
+          <section data-auto-animate>
+            <p>Using the model</p>
+          </section>
+          <section data-auto-animate>
+            <p>Using the model</p>
+            <li>Defining a prompt and a number of steps</li>
+          </section>
+          <section data-auto-animate>
+            <p>Using the model</p>
+            <li>Defining a prompt and a number of steps</li>
+            <li>Estimating noise of the image</li>
+          </section>
+          <section data-auto-animate>
+            <p>Using the model</p>
+            <li>Defining a prompt and a number of steps</li>
+            <li>Estimating noise of the image</li>
+            <li>Substracting the estimated noise from N-1 step image</li>
           </section>
         </section>
 
@@ -100,13 +160,13 @@
           <section data-auto-animate>
             <p>Image generation modes:</p>
             <li>Simple text to image</li>
-            <li>Text description to image</li>         
+            <li>Text description to image</li>
           </section>
           <section data-auto-animate>
             <p>Image generation modes:</p>
             <li>Simple text to image</li>
             <li>Text description to image</li>
-            <li>Image to image</li>         
+            <li>Image to image</li>
           </section>
           <section data-auto-animate>
             <p>Image generation modes:</p>
@@ -121,7 +181,7 @@
             <li>Text description to image</li>
             <li>Image to image</li>
             <li>Text to video</li>
-            <li>image to video</li>
+            <li>Image to video</li>
           </section>
         </section>
 
@@ -133,33 +193,60 @@
             <p>Models and their capabilities</p>
             <p>DALL-E 2</p>
             <img src="assets/dalle.png" style="width: 40%" />
-            <p style="font-size: large;">Prompt: A raccoon astronaut with the cosmos reflecting on the glass of his helmet dreaming of the stars.</p>
+            <p style="font-size: large">
+              Prompt: A raccoon astronaut with the cosmos reflecting on the
+              glass of his helmet dreaming of the stars.
+            </p>
           </section>
           <section data-auto-animate>
             <p>Models and their capabilities</p>
             <p>Midjourney</p>
-            <img src="assets/mid.png" style="width: 50%" /> 
-            <p style="font-size: large;">Prompt: Textured, summertime, warmth, bokeh, lotus on a pond in reflection, cinematic photograph.</p>     
+            <img src="assets/mid.png" style="width: 50%" />
+            <p style="font-size: large">
+              Prompt: Textured, summertime, warmth, bokeh, lotus on a pond in
+              reflection, cinematic photograph.
+            </p>
           </section>
           <section data-auto-animate>
             <p>Models and their capabilities</p>
             <p>Stable Difusion</p>
-            <img src="assets/stable.png" style="width: 40%" />  
-            <p style="font-size: large;">Prompt: A photograph of an astronaut riding a horse.</p>     
+            <img src="assets/stable.png" style="width: 40%" />
+            <p style="font-size: large">
+              Prompt: A photograph of an astronaut riding a horse.
+            </p>
           </section>
           <section data-auto-animate>
             <p>Models and their capabilities</p>
             <p>Google Imagen</p>
-            <img src="assets/imagen.png" style="width: 40%" /> 
-            <p style="font-size: large;">Prompt: A photo of a Corgi dog riding a bike in Times Square. It is wearing sunglasses and a beach hat.</p>   
+            <img src="assets/imagen.png" style="width: 40%" />
+            <p style="font-size: large">
+              Prompt: A photo of a Corgi dog riding a bike in Times Square. It
+              is wearing sunglasses and a beach hat.
+            </p>
           </section>
           <section data-auto-animate>
             <p>Models and their capabilities</p>
             <p>Google Parti</p>
             <img src="assets/parti.png" style="width: 40%" />
-            <p style="font-size: large;">Prompt: A portrait photo of a kangaroo wearing an orange hoodie and blue sunglasses standing on the grass in front of the Sydney Opera House holding a sign on the chest that says Welcome Friends!</p>
-            
-            <!-- Tutaj nwm czy jeszcze coś może o tych text to video, pic to vid i pic to pic -->
+            <p style="font-size: large">
+              Prompt: A portrait photo of a kangaroo wearing an orange hoodie
+              and blue sunglasses standing on the grass in front of the Sydney
+              Opera House holding a sign on the chest that says Welcome Friends!
+            </p>
+          </section>
+          <section data-auto-animate>
+            <p>Models and their capabilities</p>
+            <p>Google Video AI</p>
+            <img src="assets/panda.gif" style="width: 50%" />
+            <p style="font-size: large">Prompt: A panda eating bamboo.</p>
+          </section>
+          <section data-auto-animate>
+            <p>Models and their capabilities</p>
+            <p>Meta Make-A-Video</p>
+            <img src="assets/make_a_video.gif" style="width: 50%" />
+            <p style="font-size: large">
+              Prompt: A teddy bear painting itself.
+            </p>
           </section>
         </section>
 
@@ -170,30 +257,52 @@
           <section data-auto-animate>
             <p>How image generation can be used</p>
             <p>3D model texture generation</p>
-            <img src="assets/3d.png" style="width: 40%" />
+            <img src="assets/3d.png" style="width: 70%" />
           </section>
           <section data-auto-animate>
             <p>How image generation can be used</p>
             <p>Generate images from sketches</p>
-            <img src="assets/sketch.png" style="width: 40%" />      
+            <img src="assets/sketch.png" style="width: 60%" />
           </section>
           <section data-auto-animate>
             <p>How image generation can be used</p>
             <p>Expand image (Outpainting)</p>
-            <img src="assets/outpainting.png" style="width: 70%" />       
+            <img src="assets/outpainting.png" style="width: 70%" />
+            <p style="font-size: large">
+              Johannes Vermeer - Girl with a Pearl Earring
+            </p>
           </section>
           <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Inserting new details into image (Inpainting)</p>
+            <img src="assets/inpainting.png" style="width: 70%" />
+            <p style="font-size: large">A snow leopard with added features</p>
+          </section>
+          <!-- <section data-auto-animate>
             <p>How image generation can be used</p>
             <p>Google Imagen</p>
-            <img src="assets/imagen.png" style="width: 40%" />    
+            <img src="assets/imagen.png" style="width: 40%" />
+            Coś opisać odnośnie użycia Imagen?
+          </section> -->
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Changing style of images</p>
+            <img src="assets/style.webp" style="width: 70%" />
           </section>
           <section data-auto-animate>
             <p>How image generation can be used</p>
-            <p>Generate something that is the opposite to the phrase</p>
+            <p>Changing style of images</p>
+            <img src="assets/artist.webp" style="width: 70%" />
+          </section>
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Filtering out words in the image</p>
+            <img src="assets/filtering.webp" style="width: 70%" />
           </section>
           <section data-auto-animate>
             <p>How image generation can be used</p>
             <p>Generate something that is a opposite to the prompt</p>
+            <p>Prompt: Marlon Brando</p>
             <img src="assets/brando.png" style="width: 25%" />
           </section>
           <section data-auto-animate>
@@ -202,12 +311,32 @@
             <p>Prompt: Marlon Brando::-1</p>
             <img src="assets/brando1.png" style="width: 40%" />
           </section>
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Design help - concept art</p>
+            <img src="assets/ui.jpg" style="width: 40%" />
+          </section>
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Stock photo bases replacement</p>
+            <img src="assets/monk1.jpg" style="width: 50%" />
+          </section>
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p>Stock photo bases replacement</p>
+            <img src="assets/monk2.jpg" style="width: 50%" />
+          </section>
+          <section data-auto-animate>
+            <p>How image generation can be used</p>
+            <p><b>MEMES</b></p>
+            <img src="assets/meme.jpg" style="width: 50%" />
+          </section>
         </section>
 
         <section>
           <h3>Thank you for your attention</h3>
         </section>
-        
+      </div>
     </div>
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
